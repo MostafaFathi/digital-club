@@ -1,0 +1,157 @@
+/*Custom Style*/
+body{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    height: 100%;
+}
+#app , .page-content{
+    width: 100%;
+    min-height: calc(100vh - 76px);
+}
+.navbar-dark{
+    background: #1D1D1B;
+    padding-right: 0;
+    border: 0;
+}
+#navbar-mobile{
+    background: #1D1D1B url(../images/back-header.svg) no-repeat;
+    background-position: center;
+    background-size: 485px;
+    border-right: 1px solid #e5e5e5;
+}
+.navbar-dark .navbar-brand{
+    background: #E5E5E5;
+    width: 270px;
+}
+
+.navbar-brand{
+    padding: 10px 0;
+}
+
+.navbar-brand img{
+    height: 55px;
+}
+
+.navbar-top{
+    padding-top: 75px;
+}
+.sidebar:not(.sidebar-component) .sidebar-content{
+    top: 75px;
+    overflow-y: hidden;
+}
+.navbar{
+    border-top: 0;
+}
+.dropdown-user .dropdown-toggle span{
+    padding-right: 10px;
+}
+.dropdown-user .dropdown-toggle img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.dropdown-user .dropdown-toggle::after{
+    position: absolute;
+    margin: 0;
+    right: 10px;
+}
+
+.dropdown-header>i, .dropdown-header>img, .dropdown-item>i, .dropdown-item>img {
+    margin: 0 0 0 5px !important;
+}
+
+.dropdown-item{
+    font-size: 16px;
+}
+
+.navbar-nav .dropdown-menu-right{
+    right: -95px;
+}
+
+.sidebar-dark{
+    background: #fff;
+    border-left: 1px solid #DDDDDD;
+}
+
+.sidebar-user{
+    margin: 20px 0;
+}
+
+.sidebar-user .media-title span{
+    color: #3DAE2B;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+}
+.sidebar-user .media-title label{
+    color: #666666;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.sidebar-user .media-title img{
+    height: 35px;
+}
+
+.nav-sidebar .nav-item .nav-link{
+    font-size: 19px;
+    color: #666666;
+}
+
+.nav-sidebar .nav-item .nav-link img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.nav-sidebar .nav-item .nav-link:hover{
+    background-color: #3DAE2B!important;
+}
+
+.nav-sidebar .nav-item .nav-link:hover img , .nav-sidebar .router-link-exact-active.router-link-active img{
+    filter: brightness(2);
+}
+
+.nav-sidebar .router-link-exact-active.router-link-active{
+    background-color: #3DAE2B!important;
+    color: #fff;
+}
+
+.content .card{
+    border-radius: 15px;
+    border: 1px solid #DDDDDD;
+}
+.btn-primary{
+    background: #3DAE2B;
+}
+
+.card.card-body h6 , .card .card-title{
+    font-size: 19px!important;
+    font-weight: 600!important;
+}
+.card-sidebar-mobile{
+    overflow-y: scroll;
+    height: calc(100% - 145px);
+}
+.scroll-table{
+    overflow-y: scroll;
+}
+
+.card-sidebar-mobile::-webkit-scrollbar ,.scroll-table::-webkit-scrollbar {
+    width: 7px;
+}
+
+.card-sidebar-mobile::-webkit-scrollbar-thumb, .scroll-table::-webkit-scrollbar-thumb {
+  background-color: #1D1D1B;
+}
+.card-sidebar-mobile , .scroll-table {
+  scrollbar-color: #00A0DF #333333;
+  scrollbar-width: thin !important;
+}
+

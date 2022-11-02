@@ -1,0 +1,801 @@
+/*body,html{
+    width: 100%;
+    height: 100%;
+}*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(66 189 191 / 50%);
+}
+
+.btn-primary{
+    border: 0;
+    background: #43BCBE;
+    border-radius: 6px;
+    color: #fff !important;
+}
+
+.btn-primary:hover{
+    background: #274F51;
+}
+
+.navbar-toggler{
+    border: 2px solid transparent;
+    color: #274F51;
+    padding: 5px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover{
+    box-shadow: none;
+    border-radius: 6px;
+    border-color: #274F51;
+}
+
+.py-10{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mt-header{
+    margin-top: 93px;
+}
+
+.header-digital-club{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 10;
+    transition: 0.5s;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.header-digital-club .nav-link{
+    font-size: 20px;
+    color: #274F51;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.header-digital-club .nav-link:hover{
+    color: #43BCBE;
+}
+
+.header-digital-club .nav-link:last-child{
+    margin-right: 0;
+}
+
+.header-digital-club .navbar-brand{
+    margin-right: 100px;
+}
+
+.header-digital-club .navbar-brand img{
+    width: 85px;
+    height: auto;
+    transition: 0.5s;
+}
+
+/*.header-digital-club.bg-header .navbar-brand img{
+    width: 60px;
+}*/
+
+.header-digital-club .btns-header a{
+    color: #274F51;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.header-digital-club .btns-header a:hover{
+    color: #43BCBE;
+}
+
+.header-digital-club .btns-header a.link-user{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #274F51;
+    border-radius: 50%;
+}
+
+.header-digital-club .btns-header a.link-user:hover{
+    border: 2px solid #43BCBE;
+}
+
+.header-digital-club .dropdown-menu{
+    border: 0;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.header-digital-club .dropdown .nav-link:after{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.header-digital-club .navbar-nav{
+    background: #F3F3F3;
+    margin-top: 10px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.header-digital-club .navbar-nav > li{
+    padding: 0 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.header-digital-club .navbar-nav > li:last-child{
+    border: 0;
+}
+
+.search-box{
+    position: fixed;
+    z-index: 10;
+    width: 50%;
+    margin: auto;
+    top: 20px;
+    right: 0;
+    left: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.search-box.show{
+    top: 27px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-box .input-group{
+    background: #F7F7F7;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.search-box .input-group-text{
+    background: #F7F7F7;
+    border: 1px solid #E6E6E6;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: 0;
+    color: #274F51;
+    font-size: 20px;
+}
+.search-box .input-group .form-control{
+    background: #F7F7F7;
+    border: 1px solid #E6E6E6;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 40px;
+}
+
+.section-breadcrumb .breadcrumb-item a , .section-breadcrumb .breadcrumb-item.active{
+    color: #A7A7A7;
+    font-weight: 500;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '\f061';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #A7A7A7;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.intro-join h1{
+    color: #274F51;
+    font-weight: 700;
+    font-size: 31px;
+    margin-bottom: 15px;
+}
+
+.intro-join p{
+    color: #527173;
+    font-size: 51px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    line-height: 55px;
+}
+
+.intro-join a{
+    width: 500px;
+    font-size: 35px;
+}
+
+.why-join{
+    background: #F8F8F8;
+}
+
+.why-join h2{
+    color: #274F51;
+    font-weight: 700;
+    font-size: 31px;
+    margin-bottom: 30px;
+}
+
+.why-join .card-join img{
+    width: 84px;
+    height: 84px;
+    display: table;
+    margin: 0 auto 40px;
+}
+
+.why-join .card-join{
+    box-shadow: 0px 4px 4px rgba(185, 185, 185, 0.25);
+    border-radius: 8px;
+}
+
+.why-join .card-join p{
+    color: #527173;
+    font-size: 17px;
+}
+
+.label-steps li{
+    color: #527173;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 15px 0;
+}
+
+.label-steps .steps i{
+    font-style: normal;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #EFEFEF;
+    font-weight: 700;
+    font-size: 26px;
+    color: #B8B8B8;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.label-steps .steps-2 i:before,
+.label-steps .steps-3 i:before
+{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #EFEFEF;
+    top: -21px;
+    z-index: -1;
+}
+
+.label-steps .steps-2.active i:before,
+.label-steps .steps-3.active i:before
+{
+    background: #43BCBE;
+}
+
+.label-steps .steps-2 i:after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #EFEFEF;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.label-steps .steps.active i:after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #43BCBE;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.label-steps .steps-3.active i:after{
+    display: none;
+}
+
+.label-steps .steps.active i{
+    background: #43BCBE;
+    color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 0px 3px #43bcbe;
+}
+
+.create-account .form-account .form-title{
+    color: #274F51;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.form-account .form-label{
+    color: #274F51;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.form-account .form-label span{
+    color: #43BCBE;
+}
+.form-account .form-control{
+    background: #F8F8F8;
+    border: 1px solid #D5D5D5;
+    border-radius: 46px;
+    height: 40px;
+}
+
+.form-account .form-check .form-check-input,
+.form-account .form-check .form-check-label{
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #43BCBE;
+    border-color: #43BCBE;
+}
+
+.form-account a{
+    color: #43BCBE;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.form-account a:hover{
+    color: #274F51;
+}
+
+.form-account button{
+    width: 200px;
+}
+
+.form-account select.form-control{
+    -webkit-appearance: none;
+    background: #F8F8F8 url(../images/caret-down.svg) no-repeat;
+    background-size: 10px;
+    background-position: 98% 50%;
+}
+
+.login h2{
+    color: #43BCBE;
+    font-weight: 700;
+    font-size: 39px;
+}
+
+.login h1{
+    color: #274F51;
+    font-size: 43px;
+}
+
+.btn-outline-secondary{
+    border: 1px solid #DEDEDE;
+    border-radius: 6px;
+    color: #9D9D9D;
+    text-decoration: none;
+}
+
+.btn-outline-secondary:hover{
+    background: #274F51;
+    color: #fff !important;
+}
+
+.login .form-account .btn-contact{
+    font-size: 18px;
+}
+
+.login .form-account .btn-contact:hover{
+    color: #274F51;
+}
+
+.workshop-intro h1{
+    color: #274F51;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.workshop-intro p{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.workshop{
+    background: #F8F8F8;
+}
+
+.item-workshop{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(185, 185, 185, 0.25);
+    border-radius: 8px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.item-workshop label{
+    color: #43BCBE;
+    font-weight: 300;
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.item-workshop .border-right{
+    border-right: 1px solid #A0A0A0;
+}
+
+.item-workshop label span{
+    display: block;
+}
+
+.item-workshop h3{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.item-workshop:hover{
+    border-color: #274F51;
+}
+
+.workshop-details h1{
+    color: #274F51;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.date-course label{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #274F51;
+}
+
+.date-course a{
+    color: #43BCBE;
+    font-size: 25px;
+}
+
+.date-course a:hover{
+    color: #274F51;
+}
+
+.info-course h3{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.info-course p{
+    color: #274F51;
+}
+
+.info-label label{
+    width: 150px;
+    color: #274F51;
+    font-weight: 600;
+}
+.info-label span{
+    width: 200px;
+    color: #43BCBE;
+    font-weight: 500;
+}
+
+.workshop-details .accordion {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.accordion .accordion-button{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background: none;
+}
+
+.workshop-details .accordion label{
+    color: #274F51;
+}
+.workshop-details .accordion ul{
+    padding-left: 15px;
+}
+.workshop-details .accordion ul li{
+    color: #274F51;
+}
+.workshop-details .accordion h2{
+    color: #274F51;
+    font-weight: 700;
+    font-size: 16px
+}
+.workshop-details .accordion p{
+    color: #274F51;
+}
+
+.btn-workshop a.btn{
+    width: 150px;
+}
+
+.about-us{ 
+    background: #F8F8F8;
+}
+
+.about-us-card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(185, 185, 185, 0.25);
+    border-radius: 8px;
+    color: #527173;
+}
+
+.about-us-card h2{
+    color: #274F51;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.about-us-card ul{
+    padding-left: 20px;
+}
+
+.about-us-card ul li{
+    margin-bottom: 7px;
+}
+
+.partners .partners-link img{
+    width: 100%;
+    height: auto;
+    max-height: 140px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.partners-link:hover img{
+    transform: scale(1.1);
+}
+
+.digital_club_memer img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.digital_club_memer h2{
+    color: #43BCBE;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.digital_club_memer label{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.title-memer h1{
+    color: #274F51;
+    font-weight: 300;
+    font-size: 55px;
+}
+
+.title-memer p{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.intro-digital-club{
+    height: 90vh;
+    background: url(../images/intro-dig.png)no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+.intro-digital-club img{
+   /* height: 100%;
+    width: 100%;*/
+    /*object-fit: cover;*/
+}
+
+.digital-club-title{
+    background: #F4F4F4;
+}
+
+.digital-club-title h1{
+    color: #274F51;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.digital-club-title p{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.digital-club-title a{
+    color: #43BCBE;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.digital-club-title a i{
+    color: #274F51;
+    margin-left: 10px;
+}
+
+.digital-club-links .block-link img{
+    width: 50px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.digital-club-links .block-link:hover img{
+    transform: scale(1.1);
+}
+
+.digital-club-links .block-link h2{
+    color: #43BCBE;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.digital-club-links .block-link p{
+    color: #274F51;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1400px){
+    .search-box{
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px){
+    /*.intro-digital-club {
+        height: 60vh;
+    }*/
+    .intro-digital-club img {
+        object-fit: cover; 
+    }
+
+    .login .w-75{
+        width: 100% !important;
+    }
+    .item-workshop label{
+        font-size: 30px;
+    }
+    .search-box {
+        width: 100%;
+        padding: 20px 150px;
+        background: #fff;
+    }
+    .search-box.show {
+        top: 95px;
+    }
+}
+
+@media (max-width: 768px){
+    .digital-club-links{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .label-steps{
+        position: relative !important;
+        display: none;
+    }
+    .form-account button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .item-workshop h3{
+        font-size: 22px;
+    }
+    .date-course label{
+        display: table;
+        border-right: 0;
+        border-bottom: 1px solid #274F51;
+    }
+    .search-box {
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width: 576px){
+    .intro-join p {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .intro-join a {
+        width: 100%;
+        font-size: 25px;
+    }
+    .item-workshop .border-right {
+        border-right: 0;
+        border-bottom: 1px solid #A0A0A0;
+    }
+    .item-workshop label span{
+        display: inline-block;
+    }
+    .item-workshop h3{
+        margin-bottom: 1.5rem;
+    }
+    .workshop-intro p {
+        font-size: 25px;
+    }
+    .partners{
+        margin: 0 20px;
+    }
+    .search-box {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 500px){
+    /*.intro-digital-club {
+        height: 45vh;
+    }*/
+    .digital-club-title h1{
+        font-size: 35px;
+    }
+    .header-digital-club .navbar-brand {
+        margin-right: 0px;
+    }
+    .login h1 {
+        font-size: 35px;
+    }
+    .form-account a{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .workshop-details h1 {
+        font-size: 35px;
+    }
+    .title-memer h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .digital-club-title {
+        padding: 20px 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .btn-workshop a.btn{
+        margin-bottom: 5px;
+        display: block;
+        width: 100%;
+    }
+    .search-box {
+        padding: 20px;
+    }
+}
