@@ -55,6 +55,12 @@ export default {
             content: 'main',
             selected_category:{}
         }
+    },
+    mounted() {
+        $("html, body").animate({scrollTop: 0});
+
+        if ($('.navbar-toggler').attr('aria-expanded') !== 'false')
+            $('.navbar-toggler').click()
     }
 
 }

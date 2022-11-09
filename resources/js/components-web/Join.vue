@@ -12,8 +12,8 @@
 
         <section class="intro-join mb-5">
             <div class="container">
-                <h1>Become a DDC Member</h1>
-                <p>Join more than 18,000 Members and Fellows in over 100 countries!</p>
+<!--                <h1>Become a DDC Member</h1>-->
+<!--                <p>Join more than 18,000 Members and Fellows in over 100 countries!</p>-->
                 <router-link to="/create-account" class="btn btn-primary d-table m-auto">Register for a free DDC account</router-link>
             </div>
         </section>

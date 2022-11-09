@@ -13,7 +13,6 @@ import VueRouter from 'vue-router'
 import Home from "./components-web/Home";
 import CreateAccount from "./components-web/CreateAccount";
 import Join from "./components-web/Join";
-import Login from "./components-web/Login";
 import Member from "./components-web/Member";
 import Partners from "./components-web/Partners";
 import WhoWeAre from "./components-web/WhoWeAre";
@@ -21,6 +20,7 @@ import EventIndex from "./components-web/Event/Index";
 import EventShow from "./components-web/Event/Show";
 import EventDetail from "./components-web/Event/Detail";
 import VerifyAccount from "./components-web/VerifyAccount";
+import Search from "./components-web/Search";
 
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
@@ -87,14 +87,13 @@ const routes = [
         }
     },
     {
-        path: '/events/:type/details', component: EventDetail, meta: {
+        path: '/events/:type/details/:id', component: EventDetail, meta: {
             breadcrumb: 'EventDetail'
         }
     },
     {
-        path: '/login', component: Login, meta: {
-            breadcrumb: 'Login',
-            redirectIfAuth: true
+        path: '/search', component: Search, name:'search', meta: {
+            breadcrumb: 'Search'
         }
     },
 ]
@@ -138,6 +137,7 @@ const app = new Vue({
         client: {},
         is_authed: false,
         locale: '',
+        general_search: '',
 
     },
     created() {
@@ -146,10 +146,20 @@ const app = new Vue({
     mounted() {
         let that = this
         $('#loading_overlay').addClass('d-none')
+        $('#btn-search').click(function(){
+            $('.search-box').toggleClass('show');
+            return false;
+        });
     },
     methods: {
         is_authed_used() {
             this.is_authed = localStorage.bearer_token !== undefined && localStorage.bearer_token !== '';
+        },
+        general_search_action() {
+             this.$router.push({
+                name:'search',
+                query:this.general_search,
+            })
         },
     },
     router

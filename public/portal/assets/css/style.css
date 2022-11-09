@@ -362,7 +362,7 @@ a{
 }
 
 .form-account button{
-    width: 200px;
+    width: 250px;
 }
 
 .form-account select.form-control{
@@ -536,10 +536,10 @@ a{
 }
 
 .btn-workshop a.btn{
-    width: 150px;
+    /*width: 150px;*/
 }
 
-.about-us{ 
+.about-us{
     background: #F8F8F8;
 }
 
@@ -684,7 +684,7 @@ a{
         height: 60vh;
     }*/
     .intro-digital-club img {
-        object-fit: cover; 
+        object-fit: cover;
     }
 
     .login .w-75{
