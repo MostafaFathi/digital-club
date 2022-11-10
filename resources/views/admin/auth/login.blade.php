@@ -2,7 +2,10 @@
 
 @section('content')
     <style>
-
+        .input-group-text{
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+        }
     </style>
 
     <section class="login d-flex align-items-center py-3" style="margin-top: 87px!important;">
@@ -22,7 +25,7 @@
                         <form method="POST" action="{{ route('admin.login') }}">
                             @csrf
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend m-0">
+                                <div class="input-group-prepend d-flex m-0">
                                     <span class="input-group-text"><i class="fa fa-user "></i></span>
                                 </div>
                                 <input id="email" type="email" name="email"
@@ -38,7 +41,7 @@
 
 
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend m-0">
+                                <div class="input-group-prepend d-flex m-0">
                                     <span class="input-group-text"><i class="fa fa-lock "></i></span>
                                 </div>
                                 <input type="Password" placeholder="Password" id="password" type="password"
@@ -57,7 +60,7 @@
                                        id="remember" {{ old('remember') ? 'checked' : '' }}>
                                 <label class="custom-control-label " for="remember">Remember me</label>
                             </div>
-                            <button type="submit" class="btn btn-success btn-block w-100"
+                            <button type="submit" class="btn btn-primary btn-block w-100"
                                     style="     color: rgb(255 255 255);margin-bottom: 10px;border: 0px;">
                                 Sign in
                             </button>

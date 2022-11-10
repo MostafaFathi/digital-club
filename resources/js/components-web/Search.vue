@@ -10,7 +10,7 @@
         </section>
 
 
-        <section class="workshop py-5 h-100">
+        <section class="workshop py-5">
             <div class="container"  v-if="events.length">
                 <div class="item-workshop mb-4 position-relative" v-for="(item,index) in events">
                     <div class="row align-items-center">
@@ -33,7 +33,7 @@
                     <div class="row align-items-center">
 
                         <div class="col-md-12 col-sm-12">
-                            <h3  style="text-align: center;padding: 20px;">No data match</h3>
+                            <h3 class="mb-0"  style="text-align: center;padding: 20px;">No data match</h3>
                         </div>
                     </div>
                 </div>

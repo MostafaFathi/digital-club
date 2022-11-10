@@ -24215,7 +24215,7 @@ var render = function () {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c("section", { staticClass: "workshop py-5 h-100" }, [
+    _c("section", { staticClass: "workshop py-5" }, [
       _vm.events.length
         ? _c(
             "div",
@@ -24304,7 +24304,10 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-12 col-sm-12" }, [
           _c(
             "h3",
-            { staticStyle: { "text-align": "center", padding: "20px" } },
+            {
+              staticClass: "mb-0",
+              staticStyle: { "text-align": "center", padding: "20px" },
+            },
             [_vm._v("No data match")]
           ),
         ]),

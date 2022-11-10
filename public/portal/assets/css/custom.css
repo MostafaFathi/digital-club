@@ -10,15 +10,16 @@ body{
     min-height: calc(100vh - 76px);
 }
 .navbar-dark{
-    background: #1D1D1B;
+    background: #274F51;
     padding-right: 0;
     border: 0;
 }
 #navbar-mobile{
-    background: #1D1D1B;
+    background: #274F51;
     background-position: center;
     background-size: 485px;
     border-left: 1px solid #e5e5e5;
+    padding-right: 35px;
 }
 .navbar-dark .navbar-brand{
     background: #E5E5E5;
@@ -59,9 +60,9 @@ body{
     left: 10px;
 }
 
-.dropdown-header>i, .dropdown-header>img, .dropdown-item>i, .dropdown-item>img {
+/*.dropdown-header>i, .dropdown-header>img, .dropdown-item>i, .dropdown-item>img {
     margin: 0 0 0 5px !important;
-}
+}*/
 
 .dropdown-item{
     font-size: 16px;
@@ -81,7 +82,7 @@ body{
 }
 
 .sidebar-user .media-title span{
-    color: #3DAE2B;
+    color: #43BCBE;
     font-size: 25px;
     display: block;
     text-align: center;
@@ -111,7 +112,7 @@ body{
 }
 
 .nav-sidebar .nav-item .nav-link:hover{
-    background-color: #3DAE2B!important;
+    background-color: #43BCBE!important;
 }
 
 .nav-sidebar .nav-item .nav-link:hover img , .nav-sidebar .router-link-exact-active.router-link-active img{
@@ -119,7 +120,7 @@ body{
 }
 
 .nav-sidebar .router-link-exact-active.router-link-active{
-    background-color: #3DAE2B!important;
+    background-color: #43BCBE!important;
     color: #fff;
 }
 
@@ -128,7 +129,8 @@ body{
     border: 1px solid #DDDDDD;
 }
 .btn-primary{
-    background: #3DAE2B;
+    background: #43BCBE;
+    border-color: #43BCBE;
 }
 
 .card.card-body h6 , .card .card-title{
@@ -148,7 +150,7 @@ body{
 }
 
 .card-sidebar-mobile::-webkit-scrollbar-thumb, .scroll-table::-webkit-scrollbar-thumb {
-  background-color: #1D1D1B;
+  background-color: #274F51;
 }
 .card-sidebar-mobile , .scroll-table {
   scrollbar-color: #00A0DF #333333;
@@ -164,4 +166,23 @@ body{
 }
 .navbar {
     padding: 0 !important;
+}
+
+/*new css admin*/
+
+.breadcrumb{
+    margin-bottom: 0;
+    padding: 0 1rem;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #274F51 !important;
+    border-color: #274F51 !important;
+}
+
+a{
+    color: #43BCBE;
+}
+a:hover {
+    color: #274F51;
 }

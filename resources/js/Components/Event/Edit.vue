@@ -38,7 +38,7 @@
             <div class="card">
                 <div class="card-body">
                     <form action="" method="post">
-                        <div class="row mt-4 mb-4" style="padding:5px;border-bottom: 1px solid #e1e1e1;">
+                        <div class="row mb-4" style="padding:5px 15px;border-bottom: 1px solid #e1e1e1;">
                             <h5 class="font-weight-bold"> Course information</h5>
                         </div>
                         <div class="row">
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4" style="border-bottom: 1px solid #e1e1e1;">
+                        <div class="row mb-4" style="padding:5px 15px;border-bottom: 1px solid #e1e1e1;">
                             <h5 class="font-weight-bold"> Speakers</h5>
                         </div>
                         <div :class="['row', 'mt-2']" v-for="(item,index) in event.speakers"
@@ -149,7 +149,7 @@
 
                             </div>
                         </div>
-                        <div class="row mt-3 pb-2" style="border-bottom: 1px solid #e1e1e1;">
+                        <div class="row mt-2 pb-2 pl-2" style="border-bottom: 1px solid #e1e1e1;">
                             <div class="col-md-2">
                                 <a href="#" class="btn btn-info" @click.prevent="add_new_speaker">
                                     <i class="icon-plus-circle2"></i>
@@ -157,7 +157,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row mt-4 mb-4" style="padding:5px;border-bottom: 1px solid #e1e1e1;">
+                        <div class="row mb-4 mt-3" style="padding:5px 15px;border-bottom: 1px solid #e1e1e1;">
                             <h5 class="font-weight-bold"> Learning objectives</h5>
                         </div>
                         <div class="row">
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4 mb-4" style="padding:5px;border-bottom: 1px solid #e1e1e1;">
+                        <div class="row mb-4 mt-3" style="padding:5px 15px;border-bottom: 1px solid #e1e1e1;">
                             <h5 class="font-weight-bold"> Course details</h5>
                         </div>
                         <div class="row">
@@ -178,8 +178,7 @@
                             </div>
                         </div>
 
-
-                        <div class="row mt-4 mb-4" style="padding:5px;border-bottom: 1px solid #e1e1e1;">
+                        <div class="row mb-4 mt-3" style="padding:5px 15px;border-bottom: 1px solid #e1e1e1;">
                             <h5 class="font-weight-bold"> Fees details</h5>
                         </div>
                         <div class="row">
@@ -191,7 +190,7 @@
                             </div>
                         </div>
 
-                        <div class="row mt-2">
+                        <div class="row mt-2 pl-3">
                             <button class="btn btn-success" @click.prevent="item_update">Save changes</button>
                         </div>
                     </form>

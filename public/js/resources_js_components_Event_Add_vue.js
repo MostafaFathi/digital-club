@@ -219,7 +219,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -12514,7 +12513,7 @@ var render = function () {
               _c(
                 "div",
                 {
-                  staticClass: "row mt-3 pb-2",
+                  staticClass: "row mt-2 pb-2 pl-2",
                   staticStyle: { "border-bottom": "1px solid #e1e1e1" },
                 },
                 [
@@ -12620,7 +12619,7 @@ var render = function () {
                 ]),
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "row mt-2" }, [
+              _c("div", { staticClass: "row mt-2 pl-3" }, [
                 _c(
                   "button",
                   {
@@ -12699,8 +12698,11 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "row mt-4 mb-4",
-        staticStyle: { padding: "5px", "border-bottom": "1px solid #e1e1e1" },
+        staticClass: "row mb-4",
+        staticStyle: {
+          padding: "5px 15px",
+          "border-bottom": "1px solid #e1e1e1",
+        },
       },
       [
         _c("h5", { staticClass: "font-weight-bold" }, [
@@ -12716,8 +12718,11 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "row mt-4",
-        staticStyle: { "border-bottom": "1px solid #e1e1e1" },
+        staticClass: "row mb-4",
+        staticStyle: {
+          padding: "5px 15px",
+          "border-bottom": "1px solid #e1e1e1",
+        },
       },
       [_c("h5", { staticClass: "font-weight-bold" }, [_vm._v(" Speakers")])]
     )
@@ -12729,8 +12734,11 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "row mt-4 mb-4",
-        staticStyle: { padding: "5px", "border-bottom": "1px solid #e1e1e1" },
+        staticClass: "row mb-4 mt-3",
+        staticStyle: {
+          padding: "5px 15px",
+          "border-bottom": "1px solid #e1e1e1",
+        },
       },
       [
         _c("h5", { staticClass: "font-weight-bold" }, [
@@ -12746,8 +12754,11 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "row mt-4 mb-4",
-        staticStyle: { padding: "5px", "border-bottom": "1px solid #e1e1e1" },
+        staticClass: "row mb-4 mt-3",
+        staticStyle: {
+          padding: "5px 15px",
+          "border-bottom": "1px solid #e1e1e1",
+        },
       },
       [
         _c("h5", { staticClass: "font-weight-bold" }, [
@@ -12763,8 +12774,11 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "row mt-4 mb-4",
-        staticStyle: { padding: "5px", "border-bottom": "1px solid #e1e1e1" },
+        staticClass: "row mb-4 mt-3",
+        staticStyle: {
+          padding: "5px 15px",
+          "border-bottom": "1px solid #e1e1e1",
+        },
       },
       [_c("h5", { staticClass: "font-weight-bold" }, [_vm._v(" Fees details")])]
     )

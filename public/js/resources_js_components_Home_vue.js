@@ -166,7 +166,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.apexcharts-legend-text {\n    margin-right: 10px;\n}\n.apexcharts-legend-marker {\n    display: none !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.apexcharts-legend-text {\r\n    margin-right: 10px;\n}\n.apexcharts-legend-marker {\r\n    display: none !important;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -364,7 +364,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "page-title d-flex" }, [
             _c("h4", [
               _c("span", { staticClass: "font-weight-semibold" }, [
-                _vm._v("الاحصائيات"),
+                _vm._v("Statistics"),
               ]),
             ]),
             _vm._v(" "),
@@ -392,14 +392,11 @@ var staticRenderFns = [
               _c(
                 "a",
                 { staticClass: "breadcrumb-item", attrs: { href: "/admin" } },
-                [
-                  _c("i", { staticClass: "icon-home2 mr-2" }),
-                  _vm._v(" الرئيسية"),
-                ]
+                [_c("i", { staticClass: "icon-home2 mr-2" }), _vm._v(" Home")]
               ),
               _vm._v(" "),
               _c("span", { staticClass: "breadcrumb-item active" }, [
-                _vm._v("الاحصائيات"),
+                _vm._v("Statistics"),
               ]),
             ]),
             _vm._v(" "),
